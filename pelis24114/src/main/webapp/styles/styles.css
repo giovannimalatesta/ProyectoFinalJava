@@ -1,0 +1,618 @@
+/*PAG PRINCIPAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+body{
+    background-color: #151515;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 40px;
+    color: antiquewhite;
+}
+header{
+    background-color: rgba(21,21,21,1);
+    color: antiquewhite;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+  
+}
+.nav-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.nav-principal img{
+    width: calc(25% - 20px);
+    vertical-align: middle;
+}
+.nav-principal img:hover{
+    transition: transform .1s;
+    transform: scale(1.07);
+}
+.barra-nav{
+    display: flex;
+    list-style-type: none;
+}
+.barraenlace{
+    display: flex;
+    text-decoration: none;
+    margin: 10px;
+    color: antiquewhite;
+    background-color: #9f3647;
+    font-weight: 200;
+    padding: 10px;
+    border-radius: 4px;
+}
+.barra-nav :hover{
+    transition: transform .1s;
+    transform: scale(1.07);
+}
+img{
+    height: auto;
+}
+.bienvenida{
+    background-image: url(../assets/cacflixfondo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.bienvenida h1{
+    backdrop-filter: brightness(50%);
+    color: antiquewhite;
+    background-color: rgba(159, 54, 71, .7);
+    padding: 10px;   
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.o-bienv{
+    font-size: 20px;
+    margin-top: -60px;
+    margin-bottom: -10px;
+    background-color: #151515;
+}
+.botonbienvenida{
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: rgba(159, 54, 71, .9);
+    margin-bottom: 40px;
+    border-radius: 6px;
+    padding: 10px;
+    width: 180px;
+    height: 50px;
+    font-size: 25px;
+}
+.bienvenida a:hover{
+    transition: transform .1s;
+    transform: scale(1.07);
+}
+.bienvenida h2{
+    font-size: 20px;
+    color: #151515;
+    font-weight: bald;
+}
+
+
+.busqueda{
+    background-color: #151515;
+    padding: 100px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-top: -20px;
+}
+.busqueda h2{
+   color: antiquewhite;
+   font-size: 50px;
+   margin-bottom: -80px;
+}
+
+.input-busqueda, .boton-busqueda{
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px;
+    width: 40%;
+    font-size: 15px;
+    
+}
+.boton-busqueda{
+    width: 10%;
+    background-color: #9f3647;
+    color: antiquewhite;
+    cursor: pointer;
+    font-weight: bold;
+}
+.aux{
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-top: 18%;
+}
+.tendencias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contenedor{
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+.pelicula{
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    
+}
+.pelicula img{
+    width: 100%;
+    height: 400px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.pelicula :hover{
+    transition: transform 1s;
+    transform: scale(0.9);
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #9f3647;
+    padding: 1%;
+    margin: 0 auto;
+
+}
+footer a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size:large;
+   
+}
+footer a:hover{
+    background-color: #151515;
+    transition: transform 1.2s;
+    transform: scale(1.07);
+}
+
+/*-------------MEDIA QUERY PAGINA PRINCIPAL---------------*/
+
+@media(max-width: 768px) {
+    .bienvenida{
+        height: auto;
+        padding: 20px;
+    }
+    .bienvenida h1{
+        font-size: 20px;
+        padding: 6px;
+        margin-top: 10px;
+    }
+    .botonbienvenida{
+        width: 100%;
+        max-width: 100px;
+        padding: 20px;
+        margin-top: 20px;
+        font-size: 12px;
+        
+    }
+    .o-bienv{
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+    .busqueda{
+        padding: 20px;
+        margin-top: 0;
+    }
+    .busqueda h2{
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    .input-busqueda{
+        width: 80%;
+        font-size: 14px;
+        padding: 15px;
+    }
+    .boton-busqueda{
+        width: 30%;
+        padding: 2%;
+        font-size: 14px;
+        margin-top: 1%;
+    }
+    .aux{
+        font-size: 28px;
+    }
+    .tendencias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .pelicula{
+        width: 70%;
+    }
+    .pelicula img{
+        height: 60%;
+        object-fit: cover;
+    }
+    .pelicula :hover{
+        transform: none;
+        transition: none;
+    }
+}
+@media(max-width: 468px){
+    .pelicula img{
+        width: 80%;
+        object-fit: cover;
+    }
+    .pelicula :hover{
+        transform: none;
+        transition: none;
+    }
+}
+
+/*--------------------------------------------------------*/
+
+/*PAGINA DESCRIPCION PELICULA  */
+.contenedorpeli{
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+    display: flex;
+    background-color:  rgba(243,176,99,.1);
+}
+#imgpeli{
+    width: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+.infogral{
+    color: antiquewhite;
+    background-image: url(/src/dunebackground.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textoinfo{
+    margin-top: 5%;
+}
+.textoinfo h1{
+    margin-bottom: 1%;
+   
+}
+.textoinfo h2{
+    margin-top: 8%;
+    margin-bottom: 1%;
+}
+.textoinfo p{
+    font-size: 18px;
+    background-color:  rgba(110,106,82,.5);
+    border-radius: 5px;
+    padding: 5px;
+}
+.direccion{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+
+    text-align: left;
+}
+.persona p{
+    background-color: rgba(110,106,82,0);
+    font-weight: bold;
+    text-align: center;
+}
+
+.contenedoradicional{
+    
+    max-width: 1200px; 
+    margin: 4% auto 2% auto; 
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.infoadicional{
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infoadicional h2{
+    margin-bottom: 1%;
+    align-self: flex-start;
+}
+.contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+iframe{
+    flex: 1;
+    border: none;
+}
+.derecha{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+}
+.redespelicula a{
+    margin-left: 60px;
+}
+.redespelicula img{
+    width: 10%;
+    background-color: rgba(255, 255, 255, .5);
+    margin-bottom: 10px;
+}
+.infoadicional p{
+    margin-top: 30px;
+    margin-left: 59px;
+    font-size: 20px;
+
+}
+.invertir{
+    filter: invert(92%);
+    background-color: #151515;
+}
+/*----------------------------MEDIA DESCRIPCION-----------------------*/
+@media(max-width: 768px){
+
+    html, body{
+        width: 100%;
+        max-width: 100%;
+    }
+    header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+
+    .nav-principal{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: inherit;
+    }
+    .nav-principal img:hover{
+        transition: none;
+        transform: none;
+    }
+    .barra-nav :hover{
+        transition: none;
+        transform: none;
+    }
+    /*------------------------*/
+    .contenedorpeli{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    #imgpeli{
+        margin-top: 3%;
+        margin-right: 0;
+        margin-bottom: 3%;
+    }
+    
+    .textoinfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3%;
+    }
+    .textoinfo h1{
+        font-size: 50px;
+    }
+
+    /*-----------------------------*/
+    .contenedoradicional{
+        margin: 2% auto;
+        padding: 10px;
+    }
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe{
+        width: 95%;
+        height: 1000px;
+        margin: 0 auto;
+        border: none;
+    }
+    .derecha{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin-top: 20px;
+       width: 100%;
+    }
+    .redespelicula{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0 auto;
+        flex-wrap: nowrap;
+       
+    }
+    .redespelicula a{
+     margin: 0 30px;
+    }
+    .redespelicula img{
+        width: 50%;
+        max-width: 100px;
+
+    }
+    .infoadicional h2{
+        text-align: center;
+        width: 100%;
+    }
+    .infoadicional p{
+        text-align: center;
+        width: 50%;
+        margin-left: 1%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    footer a:hover{
+        transition: none;
+        transform: none;
+        background-color: #9f3647;
+    }
+    
+}
+
+
+
+/*DESCRIPCION PELICULA*/
+
+
+/*----------------REGISTRO-------------------*/
+.bodyform{
+    background-image: url(/src/cine.jpg);
+    background-size: cover;  
+    color: antiquewhite; 
+}
+
+.contenedorform{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 60%;
+    height: 500px;
+    text-align: center;
+    margin: 4% auto 2% auto; 
+
+}
+
+.formulario{
+    background-color: rgba(21,21,21,.7);
+    width: 50%;
+    height: 510px;
+    border-radius: 5px;
+    padding: 10%;
+    align-items: center;
+}
+.formulario h1{
+    font-size: 30px;
+    margin-bottom: 5%;
+    margin-top: -10%;
+}
+.input-form{
+    margin: 1%;
+    padding: 15px;
+    border-radius: 20px;
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
+    background-color: #151515;
+    color: antiquewhite;
+    font-weight: bold;
+    border-style: none;
+}
+.boton-form{
+    margin-top: 5%;
+    padding: 4%;
+    background-color: rgba(159, 54, 71, .9);
+    color: antiquewhite;
+    border-radius: 5px;
+    cursor: pointer;
+    border-style: none;
+}
+.o-form{
+    margin-top: 10%;
+    font-size: 20px;
+    margin-bottom: 15%;
+}
+a{
+    text-decoration: none;
+}
+
+@media(max-width: 768px){
+    .contenedorform{
+        max-width: 100%;
+    }
+    .input-form{
+        font-size: 10px;
+        width: 100%;
+    }
+    .boton-form{
+        width: 70%;
+        font-size: 13px;
+    }
+
+}
+/*--------------------------- CREAR USUARIO-----------------------
+--------------USA CASI TODO LO DE INICIAR SESION-------------------*/
+#creauser{
+    margin-top: -31%;
+    font-size: medium;
+
+}
+@media(max-width:768px){
+ label{
+    font-size: 10px;
+ }   
+ #pais{
+    font-size: 7px;
+    
+ }
+ #boton-crearusuario{
+    font-size: 9px;
+    padding: 5%;
+ }
+}
+
+
+#movieSection{
+    margin: 20px 0;
+}
+.table{
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #9f3647;
+}
+.table th{
+    color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+}
+
+.table td{
+    backdrop-filter: brightness(50%);
+    background-color: #151515;
+    color: antiquewhite;
+    text-align: left;
+    padding: 5px;
+}
